@@ -1,0 +1,13 @@
+[
+    { "icao": "A320", "manufacturer": "Airbus", "model": "A320" },
+    { "icao": "B744", "manufacturer": "Boeing", "model": "747-400" },
+    { "icao": "B738", "manufacturer": "Boeing", "model": "737-800" },
+    { "icao": "A388", "manufacturer": "Airbus", "model": "A380-800" },
+    { "icao": "E190", "manufacturer": "Embraer", "model": "190" },
+    { "icao": "DH8D", "manufacturer": "De Havilland Canada", "model": "DHC-8-400 Dash 8Q" },
+    { "icao": "C172", "manufacturer": "Cessna", "model": "172 Skyhawk" },
+    { "icao": "B77W", "manufacturer": "Boeing", "model": "777-300ER" },
+    { "icao": "A359", "manufacturer": "Airbus", "model": "A350-900" },
+    { "icao": "CRJ9", "manufacturer": "Canadair", "model": "Regional Jet 900" },
+    { "icao": "AT76", "manufacturer": "Aerospatiale/Alenia", "model": "ATR 72-600" }
+  ]
