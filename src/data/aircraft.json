@@ -1,13 +1,919 @@
 [
-    { "icao": "A320", "manufacturer": "Airbus", "model": "A320" },
-    { "icao": "B744", "manufacturer": "Boeing", "model": "747-400" },
-    { "icao": "B738", "manufacturer": "Boeing", "model": "737-800" },
-    { "icao": "A388", "manufacturer": "Airbus", "model": "A380-800" },
-    { "icao": "E190", "manufacturer": "Embraer", "model": "190" },
-    { "icao": "DH8D", "manufacturer": "De Havilland Canada", "model": "DHC-8-400 Dash 8Q" },
-    { "icao": "C172", "manufacturer": "Cessna", "model": "172 Skyhawk" },
-    { "icao": "B77W", "manufacturer": "Boeing", "model": "777-300ER" },
-    { "icao": "A359", "manufacturer": "Airbus", "model": "A350-900" },
-    { "icao": "CRJ9", "manufacturer": "Canadair", "model": "Regional Jet 900" },
-    { "icao": "AT76", "manufacturer": "Aerospatiale/Alenia", "model": "ATR 72-600" }
-  ]
+    {
+        "icao": "A320",
+        "manufacturer": "Airbus",
+        "model": "A320",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Logo_Airbus_A320.svg/210px-Logo_Airbus_A320.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A320_family"
+    },
+    {
+        "icao": "B744",
+        "manufacturer": "Boeing",
+        "model": "747-400",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_%28DSC09727%29.jpg/300px-Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_%28DSC09727%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_747-400"
+    },
+    {
+        "icao": "B738",
+        "manufacturer": "Boeing",
+        "model": "737-800",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/D-ATUF_B737-8K5W_TUIfly-Hapag_retro_PMI_26SEP10_%286341092368%29.jpg/440px-D-ATUF_B737-8K5W_TUIfly-Hapag_retro_PMI_26SEP10_%286341092368%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_737-800"
+    },
+    {
+        "icao": "A388",
+        "manufacturer": "Airbus",
+        "model": "A380-800",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Logo_Airbus_A380.svg/210px-Logo_Airbus_A380.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A380"
+    },
+    {
+        "icao": "E190",
+        "manufacturer": "Embraer",
+        "model": "190",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg/300px-KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Embraer_E190"
+    },
+    {
+        "icao": "DH8D",
+        "manufacturer": "De Havilland Canada",
+        "model": "DHC-8-400 Dash 8Q",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Airberlin_Q400_%28cropped%29.jpg/300px-Airberlin_Q400_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_Dash_8"
+    },
+    {
+        "icao": "C172",
+        "manufacturer": "Cessna",
+        "model": "172 Skyhawk",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Cessna_172S_Skyhawk_SP%2C_Private_JP6817606.jpg/300px-Cessna_172S_Skyhawk_SP%2C_Private_JP6817606.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_172"
+    },
+    {
+        "icao": "B77W",
+        "manufacturer": "Boeing",
+        "model": "777-300ER",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg/300px-Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_777"
+    },
+    {
+        "icao": "A359",
+        "manufacturer": "Airbus",
+        "model": "A350-900",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logo_Airbus_A350.svg/210px-Logo_Airbus_A350.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A350"
+    },
+    {
+        "icao": "CRJ9",
+        "manufacturer": "Canadair",
+        "model": "Regional Jet 900",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/EC-JTU_%288544702097%29.jpg/300px-EC-JTU_%288544702097%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Bombardier_CRJ900"
+    },
+    {
+        "icao": "AT76",
+        "manufacturer": "Aerospatiale/Alenia",
+        "model": "ATR 72-600",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/F-WWEZ_%28948%29_ATR.72-212A%28500%29_FlyFireFly_TLS_30AUG11_%286097869500%29_%28cropped%29.jpg/300px-F-WWEZ_%28948%29_ATR.72-212A%28500%29_FlyFireFly_TLS_30AUG11_%286097869500%29_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/ATR_72"
+    },
+    {
+        "icao": "A124",
+        "manufacturer": "Antonov",
+        "model": "An-124 Ruslan",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%D0%90%D0%BD-124_9773054055093%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_-_%D0%94%D0%BE%D0%BC%D0%BE%D0%B4%D0%B5%D0%B4%D0%BE%D0%B2%D0%BE_RP2297.jpg/300px-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%D0%90%D0%BD-124_9773054055093%2C_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0_-_%D0%94%D0%BE%D0%BC%D0%BE%D0%B4%D0%B5%D0%B4%D0%BE%D0%B2%D0%BE_RP2297.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Antonov_An-124_Ruslan"
+    },
+    {
+        "icao": "A140",
+        "manufacturer": "Antonov",
+        "model": "An-140",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Antonov_An-140_1.jpg/300px-Antonov_An-140_1.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Antonov_An-140"
+    },
+    {
+        "icao": "A148",
+        "manufacturer": "Antonov",
+        "model": "An-148",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%D0%90%D0%BD-148_01-02%2C_%D0%9A%D0%B8%D0%B5%D0%B2_-_%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%28%D0%93%D0%BE%D1%81%D1%82%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%29_RP29608.jpg/300px-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%D0%90%D0%BD-148_01-02%2C_%D0%9A%D0%B8%D0%B5%D0%B2_-_%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%28%D0%93%D0%BE%D1%81%D1%82%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%29_RP29608.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Antonov_An-148"
+    },
+    {
+        "icao": "A158",
+        "manufacturer": "Antonov",
+        "model": "An-158",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%D0%90%D0%BD-148_01-02%2C_%D0%9A%D0%B8%D0%B5%D0%B2_-_%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%28%D0%93%D0%BE%D1%81%D1%82%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%29_RP29608.jpg/300px-%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%D0%90%D0%BD-148_01-02%2C_%D0%9A%D0%B8%D0%B5%D0%B2_-_%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2_%28%D0%93%D0%BE%D1%81%D1%82%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%29_RP29608.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Antonov_An-158"
+    },
+    {
+        "icao": "A225",
+        "manufacturer": "Antonov",
+        "model": "An-225 Mriya",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Antonov_Design_Bureau_Antonov_An-225_Mriya_at_Leipzig_Halle_%28EDDP-LEJ%29.jpg/300px-Antonov_Design_Bureau_Antonov_An-225_Mriya_at_Leipzig_Halle_%28EDDP-LEJ%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Antonov_An-225_Mriya"
+    },
+    {
+        "icao": "A306",
+        "manufacturer": "Airbus",
+        "model": "A300-600",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Iran_Air_Airbus_A300B4-605R_EP-IBD_%2823416357051%29.jpg/300px-Iran_Air_Airbus_A300B4-605R_EP-IBD_%2823416357051%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A300-600"
+    },
+    {
+        "icao": "A30B",
+        "manufacturer": "Airbus",
+        "model": "A300B2, A300B4 and A300C4",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Iran_Air_Airbus_A300B4-605R_EP-IBD_%2823416357051%29.jpg/300px-Iran_Air_Airbus_A300B4-605R_EP-IBD_%2823416357051%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A300"
+    },
+    {
+        "icao": "A310",
+        "manufacturer": "Airbus",
+        "model": "A310-200",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Air_Transat_A310_%28C-GTSF%29_%40_LHR%2C_Aug_2009.jpg/300px-Air_Transat_A310_%28C-GTSF%29_%40_LHR%2C_Aug_2009.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A310"
+    },
+    {
+        "icao": "A318",
+        "manufacturer": "Airbus",
+        "model": "A318",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Logo_Airbus_A318.svg/210px-Logo_Airbus_A318.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A318"
+    },
+    {
+        "icao": "A319",
+        "manufacturer": "Airbus",
+        "model": "A319",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/United_Airbus_A319_%2813942617705%29.jpg/300px-United_Airbus_A319_%2813942617705%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A319"
+    },
+    {
+        "icao": "A321",
+        "manufacturer": "Airbus",
+        "model": "A321",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Logo_Airbus_A321.svg/210px-Logo_Airbus_A321.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A321"
+    },
+    {
+        "icao": "A332",
+        "manufacturer": "Airbus",
+        "model": "A330-200",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Logo_Airbus_A330.svg/210px-Logo_Airbus_A330.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A330-200"
+    },
+    {
+        "icao": "A333",
+        "manufacturer": "Airbus",
+        "model": "A330-300",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Logo_Airbus_A330.svg/210px-Logo_Airbus_A330.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A330-300"
+    },
+    {
+        "icao": "A342",
+        "manufacturer": "Airbus",
+        "model": "A340-200",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Logo_Airbus_A340.svg/210px-Logo_Airbus_A340.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A340-200"
+    },
+    {
+        "icao": "A343",
+        "manufacturer": "Airbus",
+        "model": "A340-300",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Logo_Airbus_A340.svg/210px-Logo_Airbus_A340.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A340-300"
+    },
+    {
+        "icao": "A345",
+        "manufacturer": "Airbus",
+        "model": "A340-500",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Logo_Airbus_A340.svg/210px-Logo_Airbus_A340.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A340-500"
+    },
+    {
+        "icao": "A346",
+        "manufacturer": "Airbus",
+        "model": "A340-600",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Logo_Airbus_A340.svg/210px-Logo_Airbus_A340.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A340-600"
+    },
+    {
+        "icao": "A35K",
+        "manufacturer": "Airbus",
+        "model": "A350-1000",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logo_Airbus_A350.svg/210px-Logo_Airbus_A350.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A350-1000"
+    },
+    {
+        "icao": "B712",
+        "manufacturer": "Boeing",
+        "model": "717",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/B717.svg/210px-B717.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_717"
+    },
+    {
+        "icao": "B720",
+        "manufacturer": "Boeing",
+        "model": "720B",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Cyprus_Airways_Boeing_720B_G-BCBB_LHR_1978-8-24.png/300px-Cyprus_Airways_Boeing_720B_G-BCBB_LHR_1978-8-24.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_720"
+    },
+    {
+        "icao": "B721",
+        "manufacturer": "Boeing",
+        "model": "727-100",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/B727.svg/210px-B727.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_727-100"
+    },
+    {
+        "icao": "B722",
+        "manufacturer": "Boeing",
+        "model": "727-200",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/B727.svg/210px-B727.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_727-200"
+    },
+    {
+        "icao": "B732",
+        "manufacturer": "Boeing",
+        "model": "737-200",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/South_African_Airlink_Boeing_737-200_Advanced_Smith.jpg/300px-South_African_Airlink_Boeing_737-200_Advanced_Smith.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_737-200"
+    },
+    {
+        "icao": "B733",
+        "manufacturer": "Boeing",
+        "model": "737-300",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg/300px-Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_737-300"
+    },
+    {
+        "icao": "B734",
+        "manufacturer": "Boeing",
+        "model": "737-400",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg/300px-Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_737-400"
+    },
+    {
+        "icao": "B735",
+        "manufacturer": "Boeing",
+        "model": "737-500",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg/300px-Classic_Colors_Southwest_Airlines_N648SW_Boeing_737-3H4_SJC.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_737-500"
+    },
+    {
+        "icao": "B736",
+        "manufacturer": "Boeing",
+        "model": "737-600",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/N8645A_Southwest_Airlines_2014_Boeing_737-8H4%28WL%29_-_cn_36907_-_ln_5038_%22HEARTtwo%22_%2815773516513%29.jpg/300px-N8645A_Southwest_Airlines_2014_Boeing_737-8H4%28WL%29_-_cn_36907_-_ln_5038_%22HEARTtwo%22_%2815773516513%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_737-600"
+    },
+    {
+        "icao": "B737",
+        "manufacturer": "Boeing",
+        "model": "737-700 / Boeing 737-700ER",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/N8645A_Southwest_Airlines_2014_Boeing_737-8H4%28WL%29_-_cn_36907_-_ln_5038_%22HEARTtwo%22_%2815773516513%29.jpg/300px-N8645A_Southwest_Airlines_2014_Boeing_737-8H4%28WL%29_-_cn_36907_-_ln_5038_%22HEARTtwo%22_%2815773516513%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_737-700"
+    },
+    {
+        "icao": "B738",
+        "manufacturer": "Boeing",
+        "model": "737-800",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/N8705Q_-_Boeing_737-8H4_-_Southwest_Airlines_%2836858874794%29.jpg/256px-N8705Q_-_Boeing_737-8H4_-_Southwest_Airlines_%2836858874794%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_737-800"
+    },
+    {
+        "icao": "B739",
+        "manufacturer": "Boeing",
+        "model": "737-900 / Boeing 737-900ER",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/N8645A_Southwest_Airlines_2014_Boeing_737-8H4%28WL%29_-_cn_36907_-_ln_5038_%22HEARTtwo%22_%2815773516513%29.jpg/300px-N8645A_Southwest_Airlines_2014_Boeing_737-8H4%28WL%29_-_cn_36907_-_ln_5038_%22HEARTtwo%22_%2815773516513%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_737-900"
+    },
+    {
+        "icao": "B741",
+        "manufacturer": "Boeing",
+        "model": "747-100",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/B-747_Iberia.jpg/300px-B-747_Iberia.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_747-100"
+    },
+    {
+        "icao": "B742",
+        "manufacturer": "Boeing",
+        "model": "747-200",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/B-747_Iberia.jpg/300px-B-747_Iberia.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_747-200"
+    },
+    {
+        "icao": "B743",
+        "manufacturer": "Boeing",
+        "model": "747-300",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/B-747_Iberia.jpg/300px-B-747_Iberia.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_747-300"
+    },
+    {
+        "icao": "B744",
+        "manufacturer": "Boeing",
+        "model": "747-400 / Boeing 747-400ER",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_%28DSC09727%29.jpg/300px-Frankfurt_Airport_Lufthansa_Boeing_747-430_D-ABVY_%28DSC09727%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_747-400"
+    },
+    {
+        "icao": "B748",
+        "manufacturer": "Boeing",
+        "model": "747-8I",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/D-ABYT_at_FRA.jpg/300px-D-ABYT_at_FRA.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_747-8"
+    },
+    {
+        "icao": "B752",
+        "manufacturer": "Boeing",
+        "model": "757-200",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/N34131_757_United_LIS.jpg/300px-N34131_757_United_LIS.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_757-200"
+    },
+    {
+        "icao": "B753",
+        "manufacturer": "Boeing",
+        "model": "757-300",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/N34131_757_United_LIS.jpg/300px-N34131_757_United_LIS.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_757-300"
+    },
+    {
+        "icao": "B762",
+        "manufacturer": "Boeing",
+        "model": "767-200 / Boeing 767-200ER",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Delta_Air_Lines_B767-332_N130DL.jpg/300px-Delta_Air_Lines_B767-332_N130DL.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_767-200"
+    },
+    {
+        "icao": "B763",
+        "manufacturer": "Boeing",
+        "model": "767-300",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Delta_Air_Lines_B767-332_N130DL.jpg/300px-Delta_Air_Lines_B767-332_N130DL.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_767-300"
+    },
+    {
+        "icao": "B764",
+        "manufacturer": "Boeing",
+        "model": "767-400ER",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Delta_Air_Lines_B767-332_N130DL.jpg/300px-Delta_Air_Lines_B767-332_N130DL.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_767-400ER"
+    },
+    {
+        "icao": "B772",
+        "manufacturer": "Boeing",
+        "model": "777-200 / Boeing 777-200ER",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg/300px-Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_777-200"
+    },
+    {
+        "icao": "B773",
+        "manufacturer": "Boeing",
+        "model": "777-300",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg/300px-Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_777-300"
+    },
+    {
+        "icao": "B77W",
+        "manufacturer": "Boeing",
+        "model": "777-300ER",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg/300px-Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_777-300ER"
+    },
+    {
+        "icao": "B77L",
+        "manufacturer": "Boeing",
+        "model": "777-200LR",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg/300px-Cathay_Pacific_Boeing_777-200%3B_B-HNL%40HKG.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_777-200LR"
+    },
+    {
+        "icao": "B788",
+        "manufacturer": "Boeing",
+        "model": "787-8",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Dreamliner_logo.svg/210px-Dreamliner_logo.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_787-8"
+    },
+    {
+        "icao": "B789",
+        "manufacturer": "Boeing",
+        "model": "787-9",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Dreamliner_logo.svg/210px-Dreamliner_logo.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_787-9"
+    },
+    {
+        "icao": "B78X",
+        "manufacturer": "Boeing",
+        "model": "787-10",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Dreamliner_logo.svg/210px-Dreamliner_logo.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Boeing_787-10"
+    },
+    {
+        "icao": "BCS1",
+        "manufacturer": "Airbus",
+        "model": "A220-100",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logo_Airbus_A220.svg/210px-Logo_Airbus_A220.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A220-100"
+    },
+    {
+        "icao": "BCS3",
+        "manufacturer": "Airbus",
+        "model": "A220-300",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logo_Airbus_A220.svg/210px-Logo_Airbus_A220.svg.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Airbus_A220-300"
+    },
+    {
+        "icao": "BE20",
+        "manufacturer": "Beechcraft",
+        "model": "(Super) King Air 200",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Royal_Air_Force_King_Air_B200_Training_Aircraft_MOD_45153010.jpg/300px-Royal_Air_Force_King_Air_B200_Training_Aircraft_MOD_45153010.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Beechcraft_Super_King_Air"
+    },
+    {
+        "icao": "BE40",
+        "manufacturer": "Hawker",
+        "model": "400",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/N400KP_%282845033310%29_%28cropped%29.jpg/300px-N400KP_%282845033310%29_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Hawker_400"
+    },
+    {
+        "icao": "C212",
+        "manufacturer": "CASA / IPTN",
+        "model": "212 Aviocar",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/CASA_212-200_%E2%80%98T.12D-74_-_54-11%E2%80%99_%2826795714424%29.jpg/300px-CASA_212-200_%E2%80%98T.12D-74_-_54-11%E2%80%99_%2826795714424%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/CASA_C-212_Aviocar"
+    },
+    {
+        "icao": "C500",
+        "manufacturer": "Cessna",
+        "model": "Citation I",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CN_Air_Cessna_501_Citation_I_SP.jpg/300px-CN_Air_Cessna_501_Citation_I_SP.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_I"
+    },
+    {
+        "icao": "C510",
+        "manufacturer": "Cessna",
+        "model": "Citation Mustang",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Cessna_Citation_Mustang_N416CM.jpg/300px-Cessna_Citation_Mustang_N416CM.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_Mustang"
+    },
+    {
+        "icao": "C525",
+        "manufacturer": "Cessna",
+        "model": "CitationJet",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/OO-FLN.JPG/300px-OO-FLN.JPG",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_CitationJet/M2"
+    },
+    {
+        "icao": "C550",
+        "manufacturer": "Cessna",
+        "model": "Citation II",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Cessna_550b_citation_bravo_cs-dhr_arp.jpg/300px-Cessna_550b_citation_bravo_cs-dhr_arp.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_II"
+    },
+    {
+        "icao": "C560",
+        "manufacturer": "Cessna",
+        "model": "Citation V",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Cessna_uc-35a_citation_560_ultra_v_arp.jpg/300px-Cessna_uc-35a_citation_560_ultra_v_arp.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_V"
+    },
+    {
+        "icao": "C56X",
+        "manufacturer": "Cessna",
+        "model": "Citation Excel",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cessna_560XL_Citation_XLS.jpg/300px-Cessna_560XL_Citation_XLS.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_Excel"
+    },
+    {
+        "icao": "C650",
+        "manufacturer": "Cessna",
+        "model": "Citation III, VI, VII",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Cessna_650_Citation_III%2C_Wheels_Aviation_AN1469360.jpg/300px-Cessna_650_Citation_III%2C_Wheels_Aviation_AN1469360.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_III"
+    },
+    {
+        "icao": "C680",
+        "manufacturer": "Cessna",
+        "model": "Citation Sovereign",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Cessna_Citation_Sovereign_Rafael_Luiz_%2814725958464%29.jpg/300px-Cessna_Citation_Sovereign_Rafael_Luiz_%2814725958464%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_Sovereign"
+    },
+    {
+        "icao": "C750",
+        "manufacturer": "Cessna",
+        "model": "Citation X",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/N975QS_2002_Cessna_750_C-N_750-0175_Citation_X_%287039507775%29.jpg/300px-N975QS_2002_Cessna_750_C-N_750-0175_Citation_X_%287039507775%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Cessna_Citation_X"
+    },
+    {
+        "icao": "CL60",
+        "manufacturer": "Canadair",
+        "model": "Challenger 600",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/OH-WII_CL604_pvt_%287950005490%29.jpg/300px-OH-WII_CL604_pvt_%287950005490%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Canadair_Challenger_600"
+    },
+    {
+        "icao": "CN35",
+        "manufacturer": "CASA/IPTN",
+        "model": "CN-235",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Polish_Air_Force_C-295_%28cropped%29.jpg/300px-Polish_Air_Force_C-295_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/EADS_CASA_C-295"
+    },
+    {
+        "icao": "CRJ1",
+        "manufacturer": "Canadair",
+        "model": "Regional Jet 100",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/N466SW_LAX_%2830314755488%29.jpg/300px-N466SW_LAX_%2830314755488%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Bombardier_CRJ100/200"
+    },
+    {
+        "icao": "CRJ2",
+        "manufacturer": "Canadair",
+        "model": "Regional Jet 200",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/N466SW_LAX_%2830314755488%29.jpg/300px-N466SW_LAX_%2830314755488%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Bombardier_CRJ100/200"
+    },
+    {
+        "icao": "CRJ7",
+        "manufacturer": "Canadair",
+        "model": "Regional Jet 700 | Regional Jet 550",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/EC-JTU_%288544702097%29.jpg/300px-EC-JTU_%288544702097%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Bombardier_CRJ700"
+    },
+    {
+        "icao": "CRJ9",
+        "manufacturer": "Canadair",
+        "model": "Regional Jet 900",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/EC-JTU_%288544702097%29.jpg/300px-EC-JTU_%288544702097%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Bombardier_CRJ900"
+    },
+    {
+        "icao": "CRJX",
+        "manufacturer": "Canadair",
+        "model": "Regional Jet 1000",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/EC-JTU_%288544702097%29.jpg/300px-EC-JTU_%288544702097%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Bombardier_CRJ1000"
+    },
+    {
+        "icao": "D228",
+        "manufacturer": "Dornier",
+        "model": "228",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Do228NG_-_RIAT_2012_%2818649688613%29.jpg/300px-Do228NG_-_RIAT_2012_%2818649688613%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Dornier_228"
+    },
+    {
+        "icao": "D328",
+        "manufacturer": "Fairchild Dornier",
+        "model": "Do.328",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Cirrus_Airlines_Dornier_328JET%2C_D-BGAQ%40ZRH%2C26.02.2008-502aq_-_Flickr_-_Aero_Icarus.jpg/300px-Cirrus_Airlines_Dornier_328JET%2C_D-BGAQ%40ZRH%2C26.02.2008-502aq_-_Flickr_-_Aero_Icarus.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Fairchild_Dornier_328JET"
+    },
+    {
+        "icao": "DH8A",
+        "manufacturer": "De Havilland Canada",
+        "model": "DHC-8-100 Dash 8 / 8Q",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Airberlin_Q400_%28cropped%29.jpg/300px-Airberlin_Q400_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_Dash_8"
+    },
+    {
+        "icao": "DH8B",
+        "manufacturer": "De Havilland Canada",
+        "model": "DHC-8-200 Dash 8 / 8Q",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Airberlin_Q400_%28cropped%29.jpg/300px-Airberlin_Q400_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_Dash_8"
+    },
+    {
+        "icao": "DH8C",
+        "manufacturer": "De Havilland Canada",
+        "model": "DHC-8-300 Dash 8 / 8Q",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Airberlin_Q400_%28cropped%29.jpg/300px-Airberlin_Q400_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_Dash_8"
+    },
+    {
+        "icao": "DH8D",
+        "manufacturer": "De Havilland Canada",
+        "model": "DHC-8-400 Dash 8Q",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Airberlin_Q400_%28cropped%29.jpg/300px-Airberlin_Q400_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_Dash_8"
+    },
+    {
+        "icao": "DHC6",
+        "manufacturer": "De Havilland Canada",
+        "model": "DHC-6 Twin Otter",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/WinAir_De_Havilland_Canada_DHC-6-300_Twin_Otter_Breidenstein.jpg/300px-WinAir_De_Havilland_Canada_DHC-6-300_Twin_Otter_Breidenstein.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-6_Twin_Otter"
+    },
+    {
+        "icao": "DHC7",
+        "manufacturer": "De Havilland Canada",
+        "model": "DHC-7 Dash 7",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/De_Havilland_Canada_DHC-7-110_Dash_7%2C_Brymon_Airways_AN2141415.jpg/300px-De_Havilland_Canada_DHC-7-110_Dash_7%2C_Brymon_Airways_AN2141415.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/De_Havilland_Canada_Dash_7"
+    },
+    {
+        "icao": "E110",
+        "manufacturer": "Embraer",
+        "model": "EMB 110 Bandeirante",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Embraer_EMB_110_%28Forca_Aerea_Brasileira%29_%C3%81gata_7_%288780126305%29.jpg/300px-Embraer_EMB_110_%28Forca_Aerea_Brasileira%29_%C3%81gata_7_%288780126305%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Embraer_EMB_110_Bandeirante"
+    },
+    {
+        "icao": "E120",
+        "manufacturer": "Embraer",
+        "model": "EMB 120 Brasilia",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/N569SW_LAX_%2826322494726%29.jpg/300px-N569SW_LAX_%2826322494726%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Embraer_EMB_120_Brasilia"
+    },
+    {
+        "icao": "E135",
+        "manufacturer": "Embraer",
+        "model": "RJ135",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Embraer_ERJ-145LU%2C_Air_France_%28Regional_Compagnie_Aerienne%29_JP6914566.jpg/300px-Embraer_ERJ-145LU%2C_Air_France_%28Regional_Compagnie_Aerienne%29_JP6914566.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Embraer_ERJ_family"
+    },
+    {
+        "icao": "E145",
+        "manufacturer": "Embraer",
+        "model": "RJ145",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Embraer_ERJ-145LU%2C_Air_France_%28Regional_Compagnie_Aerienne%29_JP6914566.jpg/300px-Embraer_ERJ-145LU%2C_Air_France_%28Regional_Compagnie_Aerienne%29_JP6914566.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Embraer_ERJ_family"
+    },
+    {
+        "icao": "E170",
+        "manufacturer": "Embraer",
+        "model": "170",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg/300px-KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Embraer_E170"
+    },
+    {
+        "icao": "E190",
+        "manufacturer": "Embraer",
+        "model": "190 / Lineage 1000",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg/300px-KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Embraer_E190"
+    },
+    {
+        "icao": "E195",
+        "manufacturer": "Embraer",
+        "model": "195",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg/300px-KLM_Cityhopper_-_Embraer_190LR_-_AN2571563.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Embraer_E195"
+    },
+    {
+        "icao": "F28",
+        "manufacturer": "Fokker",
+        "model": "F28 Fellowship",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Piedmont_F-28-1000.jpg/300px-Piedmont_F-28-1000.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Fokker_F28_Fellowship"
+    },
+    {
+        "icao": "F50",
+        "manufacturer": "Fokker",
+        "model": "50",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/CityJet_Fokker_50_OO-VLN_LUX_2010-2-27.png/300px-CityJet_Fokker_50_OO-VLN_LUX_2010-2-27.png",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Fokker_50"
+    },
+    {
+        "icao": "F70",
+        "manufacturer": "Fokker",
+        "model": "70",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/PH-JCT_Fokker_70_KLM_cityhopper.JPG/300px-PH-JCT_Fokker_70_KLM_cityhopper.JPG",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Fokker_70"
+    },
+    {
+        "icao": "F100",
+        "manufacturer": "Fokker",
+        "model": "100",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Fokker_100_%28KLM%29_PH-OFN_%2810676665315%29.jpg/300px-Fokker_100_%28KLM%29_PH-OFN_%2810676665315%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Fokker_100"
+    },
+    {
+        "icao": "G159",
+        "manufacturer": "Gulfstream Aerospace",
+        "model": "G-159 Gulfstream I",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Uscg_vc4gulfstream_1380_1964.jpg/300px-Uscg_vc4gulfstream_1380_1964.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Grumman_Gulfstream_I"
+    },
+    {
+        "icao": "G280",
+        "manufacturer": "Gulfstream",
+        "model": "G280",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/IAI_Gulfstream_G280_-_Gulfstrem_Aerospace_%2818701234531%29.jpg/300px-IAI_Gulfstream_G280_-_Gulfstrem_Aerospace_%2818701234531%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Gulfstream_G280"
+    },
+    {
+        "icao": "GLF4",
+        "manufacturer": "Gulfstream",
+        "model": "IV",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/G4-1_%28Gulfstream%29.jpg/300px-G4-1_%28Gulfstream%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Gulfstream_IV"
+    },
+    {
+        "icao": "GLF5",
+        "manufacturer": "Gulfstream",
+        "model": "V",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Gulfstream_Aerospace_G-V_Gulfstream_V_AN0811210.jpg/300px-Gulfstream_Aerospace_G-V_Gulfstream_V_AN0811210.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Gulfstream_V"
+    },
+    {
+        "icao": "GLF6",
+        "manufacturer": "Gulfstream",
+        "model": "G650",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/G-ULFS_Gulfstream_G650_CVT_05-05-16_%2827046023031%29_%28cropped%29.jpg/300px-G-ULFS_Gulfstream_G650_CVT_05-05-16_%2827046023031%29_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Gulfstream_G650"
+    },
+    {
+        "icao": "H25B",
+        "manufacturer": "British Aerospace",
+        "model": "125 series / Hawker/Raytheon 700/800/800XP/850/900",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/BAe125_aircraft_from_a_flight_of_32_%28The_Royal%29_Squadron_MOD_45147916_%28cropped%29.jpg/300px-BAe125_aircraft_from_a_flight_of_32_%28The_Royal%29_Squadron_MOD_45147916_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/British_Aerospace_125"
+    },
+    {
+        "icao": "I114",
+        "manufacturer": "Ilyushin",
+        "model": "Il-114",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/%D0%98%D0%BB%D1%8C%D1%8E%D1%88%D0%B8%D0%BD_%D0%98%D0%BB-114_2053800109%2C_%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D1%81%D0%BA_-_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_RP22506.jpg/300px-%D0%98%D0%BB%D1%8C%D1%8E%D1%88%D0%B8%D0%BD_%D0%98%D0%BB-114_2053800109%2C_%D0%A5%D0%B0%D0%B1%D0%B0%D1%80%D0%BE%D0%B2%D1%81%D0%BA_-_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9_RP22506.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Ilyushin_Il-114"
+    },
+    {
+        "icao": "IL18",
+        "manufacturer": "Ilyushin",
+        "model": "Il-18",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Rossiya_Ilyushin_Il-18.jpg/300px-Rossiya_Ilyushin_Il-18.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Ilyushin_Il-18"
+    },
+    {
+        "icao": "IL62",
+        "manufacturer": "Ilyushin",
+        "model": "Il-62",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Air-to-air_with_a_Russian_Air_Force_Ilyushin_Il-62M_%28retouched%29.jpg/300px-Air-to-air_with_a_Russian_Air_Force_Ilyushin_Il-62M_%28retouched%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Ilyushin_Il-62"
+    },
+    {
+        "icao": "IL76",
+        "manufacturer": "Ilyushin",
+        "model": "Il-76",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Il-76MD-90A_RF-78653.jpg/300px-Il-76MD-90A_RF-78653.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Ilyushin_Il-76"
+    },
+    {
+        "icao": "IL86",
+        "manufacturer": "Ilyushin",
+        "model": "Il-86",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Aeroflot_RA_Ilyushin_Il-86_von_Wedelstaedt.jpg/300px-Aeroflot_RA_Ilyushin_Il-86_von_Wedelstaedt.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Ilyushin_Il-86"
+    },
+    {
+        "icao": "IL96",
+        "manufacturer": "Ilyushin",
+        "model": "Il-96",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/CU-T1250%40PEK_%2820181107114529%29.jpg/300px-CU-T1250%40PEK_%2820181107114529%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Ilyushin_Il-96"
+    },
+    {
+        "icao": "JS31",
+        "manufacturer": "British Aerospace",
+        "model": "Jetstream 31",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/British_Aerospace_Jetstream_3102_%E2%80%98G-NFLA.jpg/300px-British_Aerospace_Jetstream_3102_%E2%80%98G-NFLA.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/British_Aerospace_Jetstream"
+    },
+    {
+        "icao": "JS32",
+        "manufacturer": "British Aerospace",
+        "model": "Jetstream 32",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/British_Aerospace_Jetstream_3102_%E2%80%98G-NFLA.jpg/300px-British_Aerospace_Jetstream_3102_%E2%80%98G-NFLA.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/British_Aerospace_Jetstream"
+    },
+    {
+        "icao": "JS41",
+        "manufacturer": "British Aerospace",
+        "model": "Jetstream 41",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Easternairways_j41_g-majx_arp.jpg/300px-Easternairways_j41_g-majx_arp.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/British_Aerospace_Jetstream_41"
+    },
+    {
+        "icao": "L101",
+        "manufacturer": "Lockheed",
+        "model": "L-1011 Tristar",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Air_India_Lockheed_L-1011_TriStar_JetPix.jpg/300px-Air_India_Lockheed_L-1011_TriStar_JetPix.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Lockheed_L-1011_TriStar"
+    },
+    {
+        "icao": "MD11",
+        "manufacturer": "McDonnell Douglas",
+        "model": "MD-11",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/KLM_McDonnell_Douglas_MD-11_PH-KCK_Ingrid_Bergman.jpg/300px-KLM_McDonnell_Douglas_MD-11_PH-KCK_Ingrid_Bergman.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-11"
+    },
+    {
+        "icao": "MD80",
+        "manufacturer": "McDonnell Douglas",
+        "model": "MD-80",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/MD83_Aircraft_of_TezJet.jpg/300px-MD83_Aircraft_of_TezJet.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-80"
+    },
+    {
+        "icao": "MD81",
+        "manufacturer": "McDonnell Douglas",
+        "model": "MD-81",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/MD83_Aircraft_of_TezJet.jpg/300px-MD83_Aircraft_of_TezJet.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-80"
+    },
+    {
+        "icao": "MD82",
+        "manufacturer": "McDonnell Douglas",
+        "model": "MD-82",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/MD83_Aircraft_of_TezJet.jpg/300px-MD83_Aircraft_of_TezJet.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-82"
+    },
+    {
+        "icao": "MD83",
+        "manufacturer": "McDonnell Douglas",
+        "model": "MD-83",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/MD83_Aircraft_of_TezJet.jpg/300px-MD83_Aircraft_of_TezJet.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-83"
+    },
+    {
+        "icao": "MD87",
+        "manufacturer": "McDonnell Douglas",
+        "model": "MD-87",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/MD83_Aircraft_of_TezJet.jpg/300px-MD83_Aircraft_of_TezJet.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-87"
+    },
+    {
+        "icao": "MD88",
+        "manufacturer": "McDonnell Douglas",
+        "model": "MD-88",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/MD83_Aircraft_of_TezJet.jpg/300px-MD83_Aircraft_of_TezJet.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-88"
+    },
+    {
+        "icao": "MD90",
+        "manufacturer": "McDonnell Douglas",
+        "model": "MD-90",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Delta_McDonnell_Douglas_MD-90-30_N908DA_%282933350256%29.jpg/300px-Delta_McDonnell_Douglas_MD-90-30_N908DA_%282933350256%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/McDonnell_Douglas_MD-90"
+    },
+    {
+        "icao": "SB20",
+        "manufacturer": "Saab",
+        "model": "2000",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Etihad_Saab_2000_take_off.jpg/300px-Etihad_Saab_2000_take_off.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Saab_2000"
+    },
+    {
+        "icao": "SF34",
+        "manufacturer": "Saab",
+        "model": "SF340A/B",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Saab_340_G-LGNC_IMG_3425_%2811712072893%29.jpg/300px-Saab_340_G-LGNC_IMG_3425_%2811712072893%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Saab_340"
+    },
+    {
+        "icao": "SU95",
+        "manufacturer": "Sukhoi",
+        "model": "Superjet 100-95",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sukhoi_Superjet_100_%285096752902%29_%28cropped%29.jpg/300px-Sukhoi_Superjet_100_%285096752902%29_%28cropped%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Sukhoi_Superjet_100"
+    },
+    {
+        "icao": "T134",
+        "manufacturer": "Tupolev",
+        "model": "Tu-134",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Tretyakovo_Tupolev_Tu-134.jpg/300px-Tretyakovo_Tupolev_Tu-134.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-134"
+    },
+    {
+        "icao": "T154",
+        "manufacturer": "Tupolev",
+        "model": "Tu-154",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Tupolev_Tu-154M%2C_Iran_Air_Tours_JP6511800.jpg/300px-Tupolev_Tu-154M%2C_Iran_Air_Tours_JP6511800.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-154"
+    },
+    {
+        "icao": "T204",
+        "manufacturer": "Tupolev",
+        "model": "Tu-204 / Tu-214",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Tupolev_Tu-204-100_%28RA-64047%29_-_1.jpg/300px-Tupolev_Tu-204-100_%28RA-64047%29_-_1.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Tupolev_Tu-204"
+    },
+    {
+        "icao": "YK40",
+        "manufacturer": "Yakovlev",
+        "model": "Yak-40",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Yakovlev_Yak-40%2C_Centr_Ug_JP7586206.jpg/300px-Yakovlev_Yak-40%2C_Centr_Ug_JP7586206.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Yakovlev_Yak-40"
+    },
+    {
+        "icao": "YK42",
+        "manufacturer": "Yakovlev",
+        "model": "Yak-42",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/International_Jet_Tour_Yakovlev_Yak-42D_Nikiforov.jpg/300px-International_Jet_Tour_Yakovlev_Yak-42D_Nikiforov.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Yakovlev_Yak-42"
+    },
+    {
+        "icao": "YS11",
+        "manufacturer": "NAMC",
+        "model": "YS-11",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/%27Japan_Navy_Schedule_21%27_Atsugi_route_4_departure._%288382459963%29.jpg/300px-%27Japan_Navy_Schedule_21%27_Atsugi_route_4_departure._%288382459963%29.jpg",
+        "wikiUrl": "https://en.wikipedia.org/wiki/NAMC_YS-11"
+    }
+]

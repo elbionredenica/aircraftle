@@ -1,47 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-body {
-  background-color: #f5f5f5;
+  background-color: #121213;
+  color: #e6e6e6;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .game-container {
   text-align: center;
+  background-color: #121213;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  width: 100%;
 }
 
-h1 {
-  font-size: 2.5rem;
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
-  color: #333;
+  width: 100%;
+}
+
+.game-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d4af37;
+  letter-spacing: 2px;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #e6e6e6;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #d4af37;
+}
+
+.info-section {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #bbbbbb;
+}
+
+.info-section h2 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #d4af37;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-section li {
+  margin-bottom: 5px;
+}
+
+.info-section strong {
+  color: #e6e6e6;
 }
 
 .board {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 30px;
 }
 
 .row {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
 }
 
@@ -49,75 +107,368 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #ccc;
-  font-size: 1.8rem;
-  font-weight: bold;
+  width: 55px;
+  height: 55px;
+  border: 2px solid #3a3a3c;
+  font-size: 2rem;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #333;
-  transition: background-color 0.3s ease;
+  color: #e6e6e6;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  border-radius: 4px;
+}
+
+.tile:not(.empty):hover {
+  transform: scale(1.05);
 }
 
 .tile.empty {
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .tile.active {
-  border-color: #999;
+  border-color: #565758;
 }
 
 .tile.correct {
-  background-color: #6aaa64;
-  color: white;
-  border-color: #6aaa64;
+  background-color: #538d4e;
+  border-color: #538d4e;
 }
 
 .tile.present {
-  background-color: #c9b458;
-  color: white;
-  border-color: #c9b458;
+  background-color: #b59f3b;
+  border-color: #b59f3b;
 }
 
 .tile.absent {
-  background-color: #787c7e;
-  color: white;
-  border-color: #787c7e;
+  background-color: #3a3a3c;
+  border-color: #3a3a3c;
 }
 
 .keyboard {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 400px;
+  gap: 6px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 .keyboard-row {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .keyboard-row button {
+  font-family: 'Rubik', sans-serif;
   font-size: 1rem;
-  padding: 15px;
+  font-weight: 500;
+  padding: 16px;
   border: none;
-  border-radius: 5px;
-  background-color: #d3d6da;
-  color: #333;
+  border-radius: 4px;
+  background-color: #818384;
+  color: #e6e6e6;
   cursor: pointer;
   text-transform: uppercase;
   flex-grow: 1;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 .keyboard-row button:hover {
-  background-color: #b1b5be;
+  background-color: #565758;
+  transform: scale(1.05);
 }
 
-/* Wider keys for Enter and Backspace */
 .keyboard-row button:nth-child(1),
 .keyboard-row button:nth-child(9) {
-  flex-grow: 1.5;
+  flex-grow: 1.4;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  text-align: center;
+  max-width: 90%;
+  width: 450px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content p {
+  text-align: left;
+}
+
+.modal h2 {
+  margin: 0 0 15px 0;
+  font-size: 2rem;
+  color: #d4af37;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #bbbbbb;
+}
+
+.modal-info a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.modal-info a:hover {
+  text-decoration: underline;
+}
+
+.modal-buttons button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: #538d4e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.modal-buttons button:hover {
+  background-color: #41733e;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.alert {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d9534f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  z-index: 1001;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+
+.alert.success {
+  background-color: #5cb85c;
+}
+
+.game-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  color: #d4af37;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.link-button:hover {
+  color: #b59f3b;
+}
+
+.color-explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color-explanation-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.color-box.correct {
+  background-color: #538d4e;
+}
+
+.color-box.present {
+  background-color: #b59f3b;
+}
+
+.color-box.absent {
+  background-color: #3a3a3c;
+}
+
+a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .game-header h1 {
+    font-size: 2rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .tile {
+    width: 45px;
+    height: 45px;
+    font-size: 1.6rem;
+  }
+
+  .keyboard {
+    max-width: 90%;
+  }
+
+  .keyboard-row button {
+    padding: 14px;
+    font-size: 0.9rem;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .modal h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content img {
+    margin-bottom: 15px;
+  }
+
+  .modal-info p {
+    font-size: 0.9rem;
+  }
+
+  .modal-buttons button {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+
+  .game-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Media query for smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .board {
+    margin-bottom: 10px;
+  }
+
+  .tile {
+    width: 38px;
+    height: 38px;
+    font-size: 1.4rem;
+    border: 1px solid #3a3a3c;
+  }
+
+  .keyboard {
+    max-width: 95%;
+    gap: 3px;
+  }
+
+  .keyboard-row {
+    gap: 3px;
+  }
+
+  .keyboard-row button {
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+
+  .modal {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .modal h2 {
+    font-size: 1.3rem;
+  }
+
+  .modal-content img {
+    margin-bottom: 10px;
+  }
+
+  .modal-info p {
+    font-size: 0.8rem;
+  }
+
+  .modal-buttons button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .game-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .game-container {
+    max-width: 100%;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  .game-footer {
+    margin-bottom: 20px;
+  }
 }

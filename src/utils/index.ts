@@ -3,6 +3,7 @@ import { AircraftData } from '../types/aircraft';
 
 export const getRandomAircraft = (): AircraftData => {
   const randomIndex = Math.floor(Math.random() * aircraftData.length);
+  console.log(aircraftData[randomIndex])
   return aircraftData[randomIndex];
 };
 
