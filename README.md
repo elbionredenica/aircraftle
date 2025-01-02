@@ -1,46 +1,94 @@
-# Getting Started with Create React App
+# Aircraftle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## A Wordle-inspired game to guess ICAO aircraft type designators
 
-## Available Scripts
+**Aircraftle** is a fun and engaging web game inspired by the popular word game Wordle. Instead of guessing a word, players try to guess the **ICAO aircraft type designator** of a randomly selected aircraft.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+*   **Multiple Guesses:** Players get 6 attempts to guess the correct ICAO code.
+*   **Keyboard Input:** An on-screen keyboard for easy input, especially on mobile devices.
+*   **Responsive Design:** Adapts to different screen sizes, providing a great experience on desktops, tablets, and mobile phones.
+*   **Win/Loss Modal:** Displays the aircraft's image, manufacturer, model, ICAO code, and a Wikipedia link when the game ends.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+*   **React:** A JavaScript library for building user interfaces.
+*   **TypeScript:** A superset of JavaScript that adds static typing.
+*   **CSS:** For styling the game.
+*   **React Icons:** For the icons used in the header.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+*   **Node.js:** Make sure you have Node.js installed on your system. You can download it from [https://nodejs.org/](https://nodejs.org/).
+*   **npm (or yarn):** npm is the package manager for Node.js and comes bundled with it. You can also use yarn as an alternative: [https://yarnpkg.com/](https://yarnpkg.com/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    git clone <repository-url>
+    cd <repository-name>
+    ```
 
-### `npm run eject`
+    Replace `<repository-url>` with the URL of your project's repository and `<repository-name>` with the name of the directory.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. **Install dependencies:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Running the Game
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. **Start the development server:**
 
-## Learn More
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    This will start the development server and open the game in your default web browser (usually at `http://localhost:3000`).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Building for Production
+
+1. **Create a production build:**
+
+    ```bash
+    npm run build
+    # or
+    yarn build
+    ```
+
+    This will create an optimized build of your game in the `build` folder. You can then deploy this folder to a web server.
+
+## Customization
+
+*   **Aircraft Data:** The aircraft data is stored in `src/data/aircraft.json`. You can modify this file to add, remove, or update aircraft. Make sure to follow the existing format:
+
+    ```json
+    [
+      {
+        "icao": "A320",
+        "manufacturer": "Airbus",
+        "model": "A320",
+        "imageUrl": "https://...",
+        "wikiUrl": "https://..."
+      },
+      // ... more aircraft
+    ]
+    ```
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have a feature suggestion, please open an issue or submit a pull request on the project's GitHub repository.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. (You'll need to create a LICENSE file and add the MIT License content).
